@@ -20,6 +20,17 @@ TEST(TwoNumbersStorySuite, sumExceeds100){
     EXPECT_THROW(num.add(), std::invalid_argument);
 }
 
+TEST(TwoNumbersStorySuite, product){
+    TwoNumbersStory num(30,10);
+    auto product = num.product();
+    EXPECT_EQ(product, 300);
+}
+
+TEST(TwoNumbersStorySuite, productExceeds500){
+    TwoNumbersStory num(50,11);
+    EXPECT_THROW(num.product(), std::invalid_argument);
+}
+
 int main(int argc, char **argv) {
     ::testing::InitGoogleTest(&argc, argv);
     return RUN_ALL_TESTS();

@@ -8,6 +8,7 @@ public:
     TwoNumbersStory(int a, int b);
 
     int add();
+    int product();
 
 private:
     int a,b;

@@ -16,3 +16,12 @@ int TwoNumbersStory::add() {
     } 
     return sum;
 }
+
+int TwoNumbersStory::product() {
+    int product = a * b;
+    if(product > 500) {
+        throw std::invalid_argument("exceeds maximum value for multiplication");
+        return 0;
+    }
+    return product;
+}
