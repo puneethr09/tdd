@@ -7,6 +7,8 @@ class TwoNumbersStory{
 public:
     TwoNumbersStory(int a, int b);
 
+    int add();
+
 private:
     int a,b;
 };
