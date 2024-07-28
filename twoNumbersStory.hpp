@@ -7,9 +7,9 @@ class TwoNumbersStory{
 public:
     TwoNumbersStory(int a, int b);
 
-    int add();
+    int sum();
     int product();
-    float division();
+    float quotient();
 
 private:
     int a,b;

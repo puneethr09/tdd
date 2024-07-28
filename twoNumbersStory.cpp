@@ -8,7 +8,7 @@ TwoNumbersStory::TwoNumbersStory(int a, int b) : a(a), b(b) {
         throw std::invalid_argument("Numbers not ordered");
 }
 
-int TwoNumbersStory::add() {
+int TwoNumbersStory::sum() {
     int sum = a + b;
     if(sum > 100) {
         throw std::invalid_argument("exceeds maximum value for addition");
@@ -26,7 +26,7 @@ int TwoNumbersStory::product() {
     return product;
 }
 
-float TwoNumbersStory::division(){
+float TwoNumbersStory::quotient(){
     float quotient = a/b;
     if(quotient > 20.0F){
         throw std::invalid_argument("Larger number is more than 20 times higher than smaller number");
