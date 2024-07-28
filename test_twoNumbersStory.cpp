@@ -37,6 +37,11 @@ TEST(TwoNumbersStorySuite, division){
     EXPECT_EQ(quotient, 4.0F);
 }
 
+TEST(TwoNumbersStorySuite, quotientExceeds20){
+    TwoNumbersStory num(25,1);
+    EXPECT_THROW(num.division(), std::invalid_argument);
+}
+
 int main(int argc, char **argv) {
     ::testing::InitGoogleTest(&argc, argv);
     return RUN_ALL_TESTS();

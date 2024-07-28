@@ -12,3 +12,4 @@ Story of two numbers.
 2. If the sum is more than 100, there should be a prompt "exceeds maximum value for addition".
 3. If the product of those two numbers exceeds 500, there should be a prompt "exceeds maximum value for multiplication".
 4. The first number used should alway be greater than the second number, failing the prompt should read "numbers not ordered".
+5. The higher number should be 20 times higher than the smaller number.

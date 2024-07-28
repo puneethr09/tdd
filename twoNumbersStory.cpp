@@ -27,5 +27,10 @@ int TwoNumbersStory::product() {
 }
 
 float TwoNumbersStory::division(){
-    return (a/b);
+    float quotient = a/b;
+    if(quotient > 20.0F){
+        throw std::invalid_argument("Larger number is more than 20 times higher than smaller number");
+        return 0;
+    }
+    return quotient;
 }
