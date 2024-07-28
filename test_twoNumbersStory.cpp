@@ -31,6 +31,12 @@ TEST(TwoNumbersStorySuite, productExceeds500){
     EXPECT_THROW(num.product(), std::invalid_argument);
 }
 
+TEST(TwoNumbersStorySuite, division){
+    TwoNumbersStory num(40,10);
+    auto quotient = num.division();
+    EXPECT_EQ(quotient, 4.0F);
+}
+
 int main(int argc, char **argv) {
     ::testing::InitGoogleTest(&argc, argv);
     return RUN_ALL_TESTS();

@@ -25,3 +25,7 @@ int TwoNumbersStory::product() {
     }
     return product;
 }
+
+float TwoNumbersStory::division(){
+    return (a/b);
+}

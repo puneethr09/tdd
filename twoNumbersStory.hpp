@@ -9,6 +9,7 @@ public:
 
     int add();
     int product();
+    float division();
 
 private:
     int a,b;
